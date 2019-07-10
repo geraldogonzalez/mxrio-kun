@@ -146,6 +146,7 @@ html {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -182,6 +183,31 @@ h2 {
 img {
   width: 100%;
   max-width: 100%;
+}
+
+.btn-top {
+  background: #fc0072;
+  position: fixed;
+  bottom: 1rem;
+  right: 2rem;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #b4bdc3;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: #b4bdc3;
+  text-decoration: none;
+  pointer-events: none;
+  transition: all 0.4s;
+  opacity: 0;
+}
+.btn-top.active {
+  pointer-events: auto;
+  bottom: 2rem;
+  opacity: 1;
 }
 
 .header {
@@ -257,6 +283,7 @@ img {
   display: grid;
   justify-content: center;
   grid-row-gap: 2rem;
+  margin-bottom: 2rem;
 }
 .section .post {
   width: 90vw;
