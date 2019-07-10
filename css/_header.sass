@@ -9,21 +9,22 @@
     transition: all .5s ease-in-out
     .profile-info
         display: grid
+        grid-row-gap: 1rem 
         align-items: center
         justify-items: center
         .avatar
-            width: 30%
-            margin: 1rem 0 .5rem 0
+            width: 85%
+            margin-top: -15rem
         .profession
             .autor-description
                 font-size: 1rem
                 color: $blanco
-                margin-bottom: .5rem
+                margin: -.8rem 0 .5rem 0
         .social-media
             display: grid
             grid-auto-flow: column
             grid-column-gap: .5rem
-            margin: .3rem 0
+            margin: -.3rem 0
             a
                 display: block
                 width: 40px
@@ -31,10 +32,10 @@
                 border: 2px solid $blanco
                 border-radius: 50%
                 font-size: 1.2rem
-                color: $fucsia
+                color: $blanco
                 transition: all .4s ease
                 .fab 
-                    margin-top: .57rem
+                    margin-top: .5rem
                     transition: all .4s ease
                 &:hover
                     border-color: transparent

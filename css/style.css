@@ -189,19 +189,20 @@ img {
   background: #fc0072;
   position: fixed;
   bottom: 1rem;
-  right: 2rem;
-  width: 50px;
-  height: 50px;
-  border: 1px solid #b4bdc3;
-  border-radius: 50%;
+  width: 70px;
+  height: 30px;
+  left: -35px;
+  margin-left: 50%;
+  border-radius: 20%;
   display: flex;
   align-items: center;
   justify-content: center;
+  justify-self: center;
   font-size: 2rem;
-  color: #b4bdc3;
+  color: #ffffff;
   text-decoration: none;
   pointer-events: none;
-  transition: all 0.4s;
+  transition: all 1s;
   opacity: 0;
 }
 .btn-top.active {
@@ -222,23 +223,24 @@ img {
 }
 .header .profile-info {
   display: grid;
+  grid-row-gap: 1rem;
   align-items: center;
   justify-items: center;
 }
 .header .profile-info .avatar {
-  width: 30%;
-  margin: 1rem 0 0.5rem 0;
+  width: 85%;
+  margin-top: -15rem;
 }
 .header .profile-info .profession .autor-description {
   font-size: 1rem;
   color: #ffffff;
-  margin-bottom: 0.5rem;
+  margin: -0.8rem 0 0.5rem 0;
 }
 .header .profile-info .social-media {
   display: grid;
   grid-auto-flow: column;
   grid-column-gap: 0.5rem;
-  margin: 0.3rem 0;
+  margin: -0.3rem 0;
 }
 .header .profile-info .social-media a {
   display: block;
@@ -247,11 +249,11 @@ img {
   border: 2px solid #ffffff;
   border-radius: 50%;
   font-size: 1.2rem;
-  color: #fc0072;
+  color: #ffffff;
   transition: all 0.4s ease;
 }
 .header .profile-info .social-media a .fab {
-  margin-top: 0.57rem;
+  margin-top: 0.5rem;
   transition: all 0.4s ease;
 }
 .header .profile-info .social-media a:hover {
@@ -282,27 +284,29 @@ img {
 .section {
   display: grid;
   justify-content: center;
-  grid-row-gap: 2rem;
+  grid-row-gap: 1.3rem;
   margin-bottom: 2rem;
 }
 .section .post {
   width: 90vw;
-  background: #ffffff;
   border-radius: 2rem;
 }
-.section .post img {
-  border-top-left-radius: 2rem;
-  border-top-right-radius: 2rem;
-}
-.section .post .description {
-  padding: 0.5rem;
+.section .post .draw {
+  width: 100%;
+  height: 100%;
 }
 .section .post .description h3 {
   font-size: 0.9rem;
   text-align: center;
   color: #232b30;
   font-family: "SF UI Text Regular";
-  margin-bottom: 0.3rem;
+  display: none;
+}
+.section .post:nth-child(odd) .draw img {
+  border-radius: 8px;
+}
+.section .post:nth-child(even) .draw img {
+  border-radius: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */

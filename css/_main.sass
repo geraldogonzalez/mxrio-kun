@@ -1,21 +1,25 @@
 .section
     display: grid
     justify-content: center
-    grid-row-gap: 2rem
+    grid-row-gap: 1.3rem
     margin-bottom: 2rem
     .post
         width: 90vw
-        background: $blanco
         border-radius: 2rem
-        img
-            border-top-left-radius: 2rem
-            border-top-right-radius: 2rem
+        .draw
+            width: 100%
+            height: 100%
         .description
-            padding: .5rem
             h3
                 font-size: .9rem
                 text-align: center
                 color: $verde
                 font-family: $SFregular
-                margin-bottom: .3rem
+                display: none
+    .post:nth-child(odd)
+        .draw img
+            border-radius: 8px
+    .post:nth-child(even)
+        .draw img
+            border-radius: 15px
     
