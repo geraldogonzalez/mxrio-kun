@@ -229,7 +229,7 @@ img {
 }
 .header .profile-info .avatar {
   width: 85%;
-  margin-top: -15rem;
+  margin: -10rem 0 -5rem 0;
 }
 .header .profile-info .profession .autor-description {
   font-size: 1rem;
