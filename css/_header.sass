@@ -1,11 +1,12 @@
 .header
+    display: grid
+    align-items: center
     background: $rosado
+    min-height: 100vh
     width: 100%
     max-width: 100%
     text-align: center
-    -webkit-box-shadow: inset 0px -8px 7px -3px rgba(0,0,0,0.48)
-    -moz-box-shadow: inset 0px -8px 7px -3px rgba(0,0,0,0.48)
-    box-shadow: inset 0px -8px 7px -3px rgba(0,0,0,0.48)
+    transition: all .5s ease-in-out
     .profile-info
         display: grid
         align-items: center
@@ -13,3 +14,41 @@
         .avatar
             width: 30%
             margin: 1rem 0 .5rem 0
+        .profession
+            .autor-description
+                font-size: 1rem
+                color: $blanco
+                margin-bottom: .5rem
+        .social-media
+            display: grid
+            grid-auto-flow: column
+            grid-column-gap: .5rem
+            margin: .3rem 0
+            a
+                display: block
+                width: 40px
+                height: 40px
+                border: 2px solid $blanco
+                border-radius: 50%
+                font-size: 1.2rem
+                color: $fucsia
+                transition: all .4s ease
+                .fab 
+                    margin-top: .57rem
+                    transition: all .4s ease
+                &:hover
+                    border-color: transparent
+                    .fab
+                        transform: scale(1.2)
+                    .fa-twitter
+                        color: $twitter
+                    .fa-tumblr
+                        color: $tumblr
+                    .fa-instagram
+                        color: $instagram
+                    .fa-behance
+                        color: $behance
+                    .fa-deviantart
+                        color: $deviantart
+                    .fa-facebook-f
+                        color: $facebook
