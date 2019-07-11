@@ -186,19 +186,16 @@ img {
 }
 
 .btn-top {
-  background: #fc0072;
   position: fixed;
-  bottom: 1rem;
-  width: 70px;
-  height: 30px;
-  left: -35px;
+  bottom: 0.5rem;
+  left: -2rem;
   margin-left: 50%;
   border-radius: 20%;
   display: flex;
   align-items: center;
   justify-content: center;
   justify-self: center;
-  font-size: 2rem;
+  font-size: 4rem;
   color: #ffffff;
   text-decoration: none;
   pointer-events: none;
@@ -207,7 +204,7 @@ img {
 }
 .btn-top.active {
   pointer-events: auto;
-  bottom: 2rem;
+  bottom: 0;
   opacity: 1;
 }
 
@@ -229,7 +226,7 @@ img {
 }
 .header .profile-info .avatar {
   width: 85%;
-  margin: -10rem 0 -5rem 0;
+  margin: -18rem 0 0 0;
 }
 .header .profile-info .profession .autor-description {
   font-size: 1rem;
@@ -285,7 +282,7 @@ img {
   display: grid;
   justify-content: center;
   grid-row-gap: 1.3rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3.5rem;
 }
 .section .post {
   width: 90vw;
@@ -303,10 +300,10 @@ img {
   display: none;
 }
 .section .post:nth-child(odd) .draw img {
-  border-radius: 8px;
+  border-radius: 10px;
 }
 .section .post:nth-child(even) .draw img {
-  border-radius: 15px;
+  border-radius: 12px;
 }
 
 /*# sourceMappingURL=style.css.map */
