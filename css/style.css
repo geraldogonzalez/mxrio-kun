@@ -72,9 +72,8 @@
 }
 @font-face {
   font-family: "Gotham Rounded Bold";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Gotham Rounded Bold"), url("../fonts/GothamRounded-Bold.otf") format("otf");
+  font-style: bold;
+  src: url(../fonts/GothamRoundedBold.otf);
 }
 @font-face {
   font-family: "SF UI Text Regular";
@@ -150,9 +149,8 @@
 }
 @font-face {
   font-family: "Gotham Rounded Bold";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Gotham Rounded Bold"), url("../fonts/GothamRounded-Bold.otf") format("otf");
+  font-style: bold;
+  src: url(../fonts/GothamRoundedBold.otf);
 }
 html {
   box-sizing: border-box;
