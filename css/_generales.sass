@@ -36,15 +36,16 @@ img
 
 .btn-top
     position: fixed
+    width: 15%
+    max-width: 15%
     bottom: .5rem
-    left: -2rem
     margin-left: 50% 
+    left: -7.5%
     border-radius: 20%
     display: flex
     align-items: center
     justify-content: center
     justify-self: center
-    font-size: 4rem
     color: $blanco
     text-decoration: none
     pointer-events: none
@@ -52,5 +53,7 @@ img
     opacity: 0
     &.active
         pointer-events: auto
-        bottom: 0
+        bottom: 2%
         opacity: 1
+        img
+            user-select: none

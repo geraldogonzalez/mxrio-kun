@@ -187,15 +187,16 @@ img {
 
 .btn-top {
   position: fixed;
+  width: 15%;
+  max-width: 15%;
   bottom: 0.5rem;
-  left: -2rem;
   margin-left: 50%;
+  left: -7.5%;
   border-radius: 20%;
   display: flex;
   align-items: center;
   justify-content: center;
   justify-self: center;
-  font-size: 4rem;
   color: #ffffff;
   text-decoration: none;
   pointer-events: none;
@@ -204,8 +205,11 @@ img {
 }
 .btn-top.active {
   pointer-events: auto;
-  bottom: 0;
+  bottom: 2%;
   opacity: 1;
+}
+.btn-top.active img {
+  user-select: none;
 }
 
 .header {
@@ -226,7 +230,7 @@ img {
 }
 .header .profile-info .avatar {
   width: 85%;
-  margin: -18rem 0 0 0;
+  margin-top: -42vh;
 }
 .header .profile-info .profession .autor-description {
   font-size: 1rem;
@@ -282,7 +286,7 @@ img {
   display: grid;
   justify-content: center;
   grid-row-gap: 1.3rem;
-  margin-bottom: 3.5rem;
+  margin-bottom: 5vh;
 }
 .section .post {
   width: 90vw;
@@ -292,18 +296,15 @@ img {
   width: 100%;
   height: 100%;
 }
+.section .post .draw img {
+  border-radius: 12px;
+}
 .section .post .description h3 {
   font-size: 0.9rem;
   text-align: center;
   color: #232b30;
   font-family: "SF UI Text Regular";
   display: none;
-}
-.section .post:nth-child(odd) .draw img {
-  border-radius: 10px;
-}
-.section .post:nth-child(even) .draw img {
-  border-radius: 12px;
 }
 
 /*# sourceMappingURL=style.css.map */
