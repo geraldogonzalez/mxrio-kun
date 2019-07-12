@@ -221,6 +221,7 @@ img {
 }
 .btn-top.active img {
   user-select: none;
+  border: 0;
 }
 
 .header {
