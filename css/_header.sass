@@ -1,6 +1,7 @@
 .header
     display: grid
-    align-items: center
+    align-items: start
+    padding-top: 7vh
     background: $rosado
     min-height: 100vh
     width: 100%
@@ -10,16 +11,17 @@
     .profile-info
         display: grid
         grid-row-gap: 1rem 
-        align-items: center
+        align-content: center
         justify-items: center
         .avatar
-            width: 85%
-            margin-top: -35vh
+            width: 100px
+            max-width: 100px
+            margin-bottom: 1rem
         .profession
             .autor-description
                 font-size: 1rem
                 color: $blanco
-                margin: -.8rem 0 .5rem 0
+                margin: -.8rem 0 .1rem 0
         .social-media
             display: grid
             grid-auto-flow: column
@@ -40,7 +42,7 @@
                 &:hover
                     border-color: transparent
                     .fab
-                        transform: scale(1.2)
+                        transform: scale(1.7)
                     .fa-twitter
                         color: $twitter
                     .fa-tumblr
