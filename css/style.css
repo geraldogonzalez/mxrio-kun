@@ -424,6 +424,7 @@ img {
   .section .thumbnail a {
     color: #232b30;
     font-size: 2rem;
+    opacity: 0.5;
   }
   .section .thumbnail a i {
     cursor: pointer;
@@ -432,7 +433,10 @@ img {
     opacity: 0.5;
   }
   .section .thumbnail a.active {
-    opacity: 0.5;
+    opacity: 1;
+  }
+  .section .thumbnail a.active i {
+    cursor: default;
   }
   .section .container-posts {
     width: 80%;
