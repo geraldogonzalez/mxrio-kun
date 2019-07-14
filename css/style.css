@@ -456,14 +456,12 @@ img {
     height: 300px;
     max-height: 300px;
     cursor: pointer;
-    filter: grayscale(50);
     transition: all 0.4s ease;
     align-self: start;
     margin-bottom: 0;
   }
   .section .container-posts .post:hover {
     transform: scale(1.1);
-    filter: grayscale(0);
   }
   .section .container-posts .post img {
     height: 100%;
