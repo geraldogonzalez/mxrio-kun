@@ -19,3 +19,7 @@ addEventListener('scroll', () => {
         toTop.classList.remove("active");
     }
 })
+
+function cambiarTamanio(){
+
+}

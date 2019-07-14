@@ -221,12 +221,14 @@ img {
 }
 .btn-top.active img {
   user-select: none;
-  border: 0;
+  border: none;
+  outline: none;
 }
 
 .header {
   display: grid;
-  align-items: center;
+  align-items: start;
+  padding-top: 7vh;
   background: #ffacb2;
   min-height: 100vh;
   width: 100%;
@@ -237,17 +239,18 @@ img {
 .header .profile-info {
   display: grid;
   grid-row-gap: 1rem;
-  align-items: center;
+  align-content: center;
   justify-items: center;
 }
 .header .profile-info .avatar {
-  width: 85%;
-  margin-top: -35vh;
+  width: 100px;
+  max-width: 100px;
+  margin-bottom: 1rem;
 }
 .header .profile-info .profession .autor-description {
   font-size: 1rem;
   color: #ffffff;
-  margin: -0.8rem 0 0.5rem 0;
+  margin: -0.8rem 0 0.1rem 0;
 }
 .header .profile-info .social-media {
   display: grid;
@@ -273,7 +276,7 @@ img {
   border-color: transparent;
 }
 .header .profile-info .social-media a:hover .fab {
-  transform: scale(1.2);
+  transform: scale(1.7);
 }
 .header .profile-info .social-media a:hover .fa-twitter {
   color: #55acee;
@@ -300,9 +303,13 @@ img {
   grid-row-gap: 1.3rem;
   margin-bottom: 5vh;
 }
+.section .thumbnail {
+  display: none;
+}
 .section .post {
   width: 90vw;
   border-radius: 2rem;
+  margin-bottom: 1rem;
 }
 .section .post .draw {
   width: 100%;
@@ -317,6 +324,156 @@ img {
   color: #232b30;
   font-family: "SF UI Text Regular";
   display: none;
+}
+
+/*********** MEDIAQUERIES DEL HEADER ***********/
+@media screen and (min-width: 768px) {
+  .header .profile-info .avatar {
+    min-width: 150px;
+    max-width: 150px;
+  }
+  .header .profile-info .profession .autor-description {
+    font-size: 2rem;
+  }
+  .header .profile-info .social-media a {
+    font-size: 1.5rem;
+    width: 50px;
+    height: 50px;
+  }
+  .header .profile-info .social-media a .fab {
+    margin-top: 0.7rem;
+  }
+}
+@media screen and (min-width: 800px) {
+  .header .profile-info {
+    grid-template-rows: repeat(10, 40px);
+  }
+  .header .profile-info .avatar {
+    width: 40%;
+    grid-row-start: 4;
+  }
+  .header .profile-info .name {
+    grid-row: 2/3;
+  }
+  .header .profile-info .name img {
+    width: 30vw;
+  }
+  .header .profile-info .profession {
+    grid-row: 3/4;
+  }
+  .header .profile-info .profession .autor-description {
+    font-size: 2rem;
+  }
+  .header .profile-info .social-media {
+    grid-row: 1/2;
+  }
+
+  .section {
+    margin-top: 10vh;
+  }
+}
+@media screen and (min-width: 992px) {
+  .header .profile-info {
+    grid-row-gap: 1.5rem;
+  }
+  .header .profile-info .avatar {
+    grid-row: 5;
+  }
+  .header .profile-info .name {
+    grid-row: 2/3;
+    align-self: start;
+    margin: 0;
+  }
+  .header .profile-info .profession {
+    grid-row: 3/4;
+    align-self: end;
+  }
+  .header .profile-info .social-media {
+    grid-row: 1/2;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .header .profile-info .profession .autor-description {
+    font-size: 2.5rem;
+  }
+}
+/*********** MEDIAQUERIES DEL MAIN ***********/
+@media screen and (min-width: 768px) {
+  .section {
+    justify-content: unset;
+    position: relative;
+  }
+  .section::before {
+    content: "";
+    position: absolute;
+    border-top: 2px solid rgba(252, 0, 114, 0.35);
+    width: 80%;
+    left: -40%;
+    margin-left: 50%;
+  }
+  .section .thumbnail {
+    display: block;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    width: 150px;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-around;
+  }
+  .section .thumbnail a {
+    color: #232b30;
+    font-size: 2rem;
+  }
+  .section .thumbnail a i {
+    cursor: pointer;
+  }
+  .section .thumbnail a:hover {
+    opacity: 0.5;
+  }
+  .section .thumbnail a.active {
+    opacity: 0.5;
+  }
+  .section .container-posts {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-row-gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 30%));
+    justify-content: space-around;
+    position: relative;
+    margin-bottom: 4rem;
+    padding-top: 1.5rem;
+    transition: all 1s ease-in-out;
+  }
+  .section .container-posts .post {
+    width: 100%;
+    height: 300px;
+    max-height: 300px;
+    cursor: pointer;
+    filter: grayscale(50);
+    transition: all 0.4s ease;
+    align-self: start;
+    margin-bottom: 0;
+  }
+  .section .container-posts .post:hover {
+    transform: scale(1.1);
+    filter: grayscale(0);
+  }
+  .section .container-posts .post img {
+    height: 100%;
+    border-radius: 0;
+    user-select: none;
+  }
+  .section .container-posts-one {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 55%));
+    transition: all 1s ease-in-out;
+  }
+  .section .container-posts-one .post {
+    height: 500px;
+    max-height: 800px;
+    filter: grayscale(0);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

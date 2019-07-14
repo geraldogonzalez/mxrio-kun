@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="css/lightbox.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -16,7 +17,7 @@
     <header class="header">
         <div class="profile-info">
             <div class="avatar">
-                <img src="img/avatar-heart.gif" alt="Heart"  title="Heart GIF">
+                <img src="img/new-avatar-heart.gif" alt="Heart"  title="Heart GIF">
             </div>
             <div class="name">
                 <img src="img/mxrio-kun/mxrio-kun_BLANCO.png" alt="Nick" title="Mxrio-Kun - Mario Garranchán">
@@ -36,261 +37,168 @@
     </header>
 
     <section class="section">
-        <!--<nav class="thumbnail">
-            <button class="t-one"><i class="fas fa-square"></i></button>
-            <button class="t-two"><i class="fas fa-th-large"></i></button>
-            <button class="t-tree"><i class="fas fa-th"></i></button>
-        </nav>-->
-
-        <div class="post">
-            <div class="draw">
-                <img src="img/eclipse/Los astros amantes.png" alt="Eclipse"
-                    title="Eclipse - Los Astros Amantes: Selene y Endimión">
+        <nav class="thumbnail">
+            <a href="#" class="t-one"><i class="fas fa-square"></i></a>
+            <a href="#" class="t-tree active"><i class="fas fa-th"></i></a>
+        </nav>
+        
+        <div class="container-posts">
+            <div class="post">
+                <a href="img/eclipse/Los astros amantes.png" class="draw" data-lightbox="draw" data-title="Eclipse - Los Astros Amantes: Selene y Endimión">
+                    <img src="img/eclipse/Los astros amantes.png" alt="Eclipse"
+                        title="Eclipse - Los Astros Amantes: Selene y Endimión">
+                </a>
             </div>
-
-            <div class="description">
-                <h3>ECLIPSE: Los Astros Amantes: Selene y Endimión.</h3>
+    
+            <div class="post">
+                <a href="img/eclipse/Los astros amantes-2.png" class="draw" data-lightbox="draw" data-title="Eclipse - Los Astros Amantes: Selene y Endimión">
+                    <img src="img/eclipse/Los astros amantes-2.png" alt="Eclipse"
+                        title="Eclipse - Los Astros Amantes: Selene y Endimión">
+                </a>
             </div>
-        </div>
-
-        <div class="post">
-            <div class="draw">
-                <img src="img/eclipse/Los astros amantes-2.png" alt="Eclipse"
-                    title="Eclipse - Los Astros Amantes: Selene y Endimión">
+    
+            <div class="post">
+                <a href="img/eclipse/Los astros amantes-3.png" class="draw" data-lightbox="draw" data-title="Eclipse - Los Astros Amantes: Selene y Endimión">
+                    <img src="img/eclipse/Los astros amantes-3.png" alt="Eclipse"
+                        title="Eclipse - Los Astros Amantes: Selene y Endimión">
+                </a>
             </div>
-
-            <div class="description">
-                <h3>ECLIPSE: Los Astros Amantes: Selene y Endimión.</h3>
+    
+            <div class="post">
+                <a href="img/NASA/NASA-1.png" class="draw" data-lightbox="draw" data-title="NASA: Buscamos señales en el cielo e ignoramos los senderos en la tierra.">
+                    <img src="img/NASA/NASA-1.png" alt="NASA" title="NASA">
+                </a>
             </div>
-        </div>
-
-        <div class="post">
-            <div class="draw">
-                <img src="img/eclipse/Los astros amantes-3.png" alt="Eclipse"
-                    title="Eclipse - Los Astros Amantes: Selene y Endimión">
+    
+            <div class="post">
+                <a href="img/NASA/NASA-2.png" class="draw" data-lightbox="draw" data-title="NASA: Natural, malhumorado y veraniego">
+                    <img src="img/NASA/NASA-2.png" alt="NASA" title="NASA">
+                </a>
             </div>
-            <div class="description">
-                <h3>ECLIPSE: Los Astros Amantes: Selene y Endimión.</h3>
+    
+            <div class="post">
+                <a href="img/NASA/NASA-3.png" class="draw" data-lightbox="draw" data-title="NASA: Grand Palace Chakri Mahaprasad Hall">
+                    <img src="img/NASA/NASA-3.png" alt="NASA" title="NASA">
+                </a>
             </div>
-        </div>
-
-        <div class="post">
-            <div class="draw">
-                <img src="img/NASA/NASA-1.png" alt="NASA" title="NASA">
+    
+            <div class="post">
+                <a href="img/posts/dragon-fruit.gif" class="draw" data-lightbox="draw" data-title="DRAGONFRUIT">
+                    <img src="img/posts/dragon-fruit.gif" alt="DRAGONFRUIT" title="DRAGONFRUIT">
+                </a>
             </div>
-            <div class="description">
-                <h3>NASA: Buscamos señales en el cielo e ignoramos los senderos en la tierra.</h3>
+    
+            <div class="post">
+                <a href="img/posts/Maneki pug-Chanel.png" class="draw" data-lightbox="draw" data-title="MANEKI PUG">
+                    <img src="img/posts/Maneki pug-Chanel.png" alt="MANEKI PUG" title="Chanel">
+                </a>
             </div>
-        </div>
-
-        <div class="post">
-            <div class="draw">
-                <img src="img/NASA/NASA-2.png" alt="NASA" title="NASA">
+    
+            <div class="post">
+                <a href="img/posts/girl-power.gif" class="draw" data-lightbox="draw" data-title="GIRL POWER">
+                    <img src="img/posts/girl-power.gif" alt="GIRL POWER" title="GIRL POWER">
+                </a>
             </div>
-            <div class="description">
-                <h3>NASA: Natural, malhumorado y veraniego</h3>
+    
+            <div class="post">
+                <a href="img/posts/Foba y Soda.png" class="draw" data-lightbox="draw" data-title="Foba y Soda sobre una guanábana que fue atacada por cupido">
+                    <img src="img/posts/Foba y Soda.png" alt="Foba y Soda" title="Foba y Soda">
+                </a>
             </div>
-        </div>
-
-        <div class="post">
-            <div class="draw">
-                <img src="img/NASA/NASA-3.png" alt="NASA" title="NASA">
+    
+            <div class="post">
+                <a href="img/posts/Hilda - Twig.png" class="draw" data-lightbox="draw" data-title="HILDA: TWIG">
+                    <img src="img/posts/Hilda - Twig.png" alt="Hilda: Twig" title="Hilda">
+                </a>
             </div>
-
-            <div class="description">
-                <h3>NASA: Grand Palace Chakri Mahaprasad Hall</h3>
+    
+            <div class="post">
+                <a href="img/posts/VAMP.gif" class="draw" data-lightbox="draw" data-title="Un nuevo personaje que ha llegado para disfrutar del verano y su nombre es VAMP">
+                    <img src="img/posts/VAMP.gif" alt="VAMP" title="VAMP">
+                </a>
             </div>
-        </div>
-
-        <div class="post">
-            <div class="draw">
-                <img src="img/posts/dragon-fruit.gif" alt="DRAGONFRUIT" title="DRAGONFRUIT">
+    
+            <div class="post">
+                <a href="img/posts/Siren book.png" class="draw" data-lightbox="draw" data-title="Siempre que terminamos un libro sentimos que un amigo se va pero algo nos deja">
+                    <img src="img/posts/Siren book.png" alt="Sirena" title="Sirena">
+                </a>
             </div>
-
-            <div class="description">
-                <h3>DRAGONFRUIT</h3>
+    
+            <div class="post">
+                <a href="img/posts/MERMAY.png" class="draw" data-lightbox="draw" data-title="¡Hola! Les traigo un poquito de MERMAY con Saulo y su big booty #BANG">
+                    <img src="img/posts/MERMAY.png" alt="Mermay" title="MERMAY">
+                </a>
             </div>
-        </div>
-
-        <div class="post">
-            <div class="draw">
-                <img src="img/posts/Maneki pug-Chanel.png" alt="MANEKI PUG" title="Chanel">
+    
+            <div class="post">
+                <a href="img/posts/Pi.png" class="draw" data-lightbox="draw" data-title="Un poco de lectura en el jardín para un día libre. - Pi">
+                    <img src="img/posts/Pi.png" alt="Pi" title="Pi">
+                </a>
             </div>
-
-            <div class="description">
-                <h3>招きシャネル - MANEKI PUG - CHANEL</h3>
+    
+            <div class="post">
+                <a href="img/posts/Bacon & Saulo.png" class="draw" data-lightbox="draw" data-title="¡¿Por qué Bacon está más cariñosa de lo normal?! ¿Qué hay en el bolso de Saulo que ella quiere?">
+                    <img src="img/posts/Bacon & Saulo.png" alt="Bacon & Saulo" title="Bacon & Saulo">
+                </a>
             </div>
-        </div>
-
-        <div class="post">
-            <div class="draw">
-                <img src="img/posts/girl-power.gif" alt="GIRL POWER" title="GIRL POWER">
+    
+            <div class="post">
+                <a href="img/posts/Bacon & Saulo - 2.png" class="draw" data-lightbox="draw" data-title="Nuevo personaje, disfrutando de una cachaça, tomando un descanso de fin de semana junto a @trixiemattel y Bacon">
+                    <img src="img/posts/Bacon & Saulo - 2.png" alt="Bacon & Saulo" title="Bacon & Saulo">
+                </a>
             </div>
-
-            <div class="description">
-                <h3>GIRL POWER</h3>
+    
+            <div class="post">
+                <a href="img/posts/Pi -2.png" class="draw" data-lightbox="draw" data-title="Plantas, ventana y una chica asiática, es muy cercana a RAM, su nombre es PI mi nuevo OC">
+                    <img src="img/posts/Pi -2.png" alt="Pi" title="Pi">
+                </a>
             </div>
-        </div>
-
-        <div class="post">
-            <div class="draw">
-                <img src="img/posts/Foba y Soda.png" alt="Foba y Soda" title="Foba y Soda">
+    
+            <div class="post">
+                <a href="img/posts/Best Friend.png" class="draw" data-lightbox="draw" data-title="To my best friend">
+                    <img src="img/posts/Best Friend.png" alt="Best friend" title="Best friend">
+                </a>
             </div>
-
-            <div class="description">
-                <h3>Foba y Soda sobre una guanábana que fue atacada por cupido</h3>
+    
+            <div class="post">
+                <a href="img/posts/Colin Krabel.png" class="draw" data-lightbox="draw" data-title="Colin Krabel">
+                    <img src="img/posts/Colin Krabel.png" alt="Colin Krabel" title="Colin Krabel">
+                </a>
             </div>
-        </div>
-
-        <div class="post">
-            <div class="draw">
-                <img src="img/posts/Hilda - Twig.png" alt="Hilda: Twig" title="Hilda">
+    
+            <div class="post">
+                <a href="img/posts/Water Boy.png" class="draw" data-lightbox="draw" data-title="WATERBOY">
+                    <img src="img/posts/Water Boy.png" alt="WATERBOY" title="WATERBOY">
+                </a>
             </div>
-
-            <div class="description">
-                <h3>HILDA: TWIG</h3>
+    
+            <div class="post">
+                <a href="img/posts/Pink picnic.png" class="draw" data-lightbox="draw" data-title="Pink Picnic">
+                    <img src="img/posts/Pink picnic.png" alt="Pink Picnic" title="Pink Picnic">
+                </a>
             </div>
-        </div>
-
-        <div class="post">
-            <div class="draw">
-                <img src="img/posts/VAMP.gif" alt="VAMP" title="VAMP">
+    
+            <div class="post">
+                <a href="img/posts/Necromancia.png" class="draw" data-lightbox="draw" data-title="Me complace presentarles a mi nuevo OC: RAM, él es un aficionado de las serpientes y las redes sociales, RAM estará muy seguido por aquí para conocer más de él y sus venenosas amigas">
+                    <img src="img/posts/Necromancia.png" alt="Necromancia" title="Necromancia">
+                </a>
             </div>
-
-            <div class="description">
-                <h3>Un nuevo personaje que ha llegado para disfrutar del verano y su nombre es VAMP</h3>
-            </div>
-        </div>
-
-        <div class="post">
-            <div class="draw">
-                <img src="img/posts/Siren book.png" alt="Sirena" title="Sirena">
-            </div>
-
-            <div class="description">
-                <h3>Siempre que terminamos un libro sentimos que un amigo se va pero algo nos deja</h3>
-            </div>
-        </div>
-
-        <div class="post">
-            <div class="draw">
-                <img src="img/posts/MERMAY.png" alt="Mermay" title="MERMAY">
-            </div>
-
-            <div class="description">
-                <h3>¡Hola! Les traigo un poquito de MERMAY con Saulo y su big booty #BANG</h3>
-            </div>
-        </div>
-
-        <div class="post">
-            <div class="draw">
-                <img src="img/posts/Pi.png" alt="Pi" title="Pi">
-            </div>
-
-            <div class="description">
-                <h3>Un poco de lectura en el jardín para un día libre. –Pi</h3>
-            </div>
-        </div>
-
-        <div class="post">
-            <div class="draw">
-                <img src="img/posts/Bacon & Saulo.png" alt="Bacon & Saulo" title="Bacon & Saulo">
-            </div>
-
-            <div class="description">
-                <h3>¡¿Por qué Bacon está más cariñosa de lo normal?! ¿Qué hay en el bolso de Saulo que ella quiere?</h3>
+    
+            <div class="post">
+                <a href="img/posts/Necromancia-6.jpg" class="draw" data-lightbox="draw" data-title="Todos tenemos una última llamada que termina con un abismo ensordecedor… soy una bestia hambrienta que sigue cayendo en tus estafas, eso es todo lo que necesito recordar. ¡Llama pronto! Recuerden soy, mxrio_kun en todas las redes sociales, BYE!">
+                    <img src="img/posts/Necromancia-6.jpg" alt="Necromancia" title="Necromancia">
+                </a>
+                </div>
             </div>
         </div>
-
-        <div class="post">
-            <div class="draw">
-                <img src="img/posts/Bacon & Saulo - 2.png" alt="Bacon & Saulo" title="Bacon & Saulo">
-            </div>
-
-            <div class="description">
-                <h3>Nuevo personaje, disfrutando de una cachaça, tomando un descanso de fin de semana junto a
-                    @trixiemattel y Bacon</h3>
-            </div>
-        </div>
-
-        <div class="post">
-            <div class="draw">
-                <img src="img/posts/Pi -2.png" alt="Pi" title="Pi">
-            </div>
-
-            <div class="description">
-                <h3>Plantas, ventana y una chica asiática, es muy cercana a RAM, su nombre es PI mi nuevo OC</h3>
-            </div>
-        </div>
-
-        <div class="post">
-            <div class="draw">
-                <img src="img/posts/Best Friend.png" alt="Best friend" title="Best friend">
-            </div>
-
-            <div class="description">
-                <h3>To my best friend</h3>
-            </div>
-        </div>
-
-        <div class="post">
-            <div class="draw">
-                <img src="img/posts/Colin Krabel.png" alt="Colin Krabel" title="Colin Krabel">
-            </div>
-
-            <div class="description">
-                <h3>Colin Krabel</h3>
-            </div>
-        </div>
-
-        <div class="post">
-            <div class="draw">
-                <img src="img/posts/Water Boy.png" alt="WATERBOY" title="WATERBOY">
-            </div>
-
-            <div class="description">
-                <h3>WATERBOY</h3>
-            </div>
-        </div>
-
-        <div class="post">
-            <div class="draw">
-                <img src="img/posts/Pink picnic.png" alt="Pink Picnic" title="Pink Picnic">
-            </div>
-
-            <div class="description">
-                <h3>Pink Picnic</h3>
-            </div>
-        </div>
-
-        <div class="post">
-            <div class="draw">
-                <img src="img/posts/Necromancia.png" alt="Necromancia" title="Necromancia">
-            </div>
-
-            <div class="description">
-                <h3>Me complace presentarles a mi nuevo OC: RAM, él es un aficionado de las serpientes y las redes
-                    sociales, RAM estará muy seguido por aquí para conocer más de él y sus venenosas amigas.</h3>
-            </div>
-        </div>
-
-        <div class="post">
-            <div class="draw">
-                <img src="img/posts/Necromancia-6.jpg" alt="Necromancia" title="Necromancia">
-            </div>
-
-            <div class="description">
-                <h3>Todos tenemos una última llamada que termina con un abismo ensordecedor… soy una bestia hambrienta
-                    que sigue cayendo en tus estafas, eso es todo lo que necesito recordar. ¡Llama pronto! Recuerden
-                    soy, mxrio_kun en todas las redes sociales, BYE!</h3>
-            </div>
-        </div>
+        
     </section>
     
     <a href="#" class="btn-top"><img src="img/CHEVRON_N.png" alt=""></a>
 
     <script src="js/app.js"></script>
     <script src="https://kit.fontawesome.com/6c25d394b9.js"></script>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
 </body>
 
 </html>
