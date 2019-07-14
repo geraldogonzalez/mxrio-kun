@@ -407,7 +407,7 @@ img {
   .section::before {
     content: "";
     position: absolute;
-    border-top: 2px solid rgba(252, 0, 114, 0.35);
+    border-top: 2px solid #ffffff;
     width: 80%;
     left: -40%;
     margin-left: 50%;
@@ -422,7 +422,7 @@ img {
     justify-content: space-around;
   }
   .section .thumbnail a {
-    color: #232b30;
+    color: rgba(0, 0, 0, 0.7);
     font-size: 2rem;
     opacity: 0.5;
   }
@@ -433,6 +433,7 @@ img {
     opacity: 0.5;
   }
   .section .thumbnail a.active {
+    color: #ffffff;
     opacity: 1;
   }
   .section .thumbnail a.active i {
