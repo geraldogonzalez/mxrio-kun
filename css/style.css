@@ -433,7 +433,7 @@ img {
     opacity: 0.5;
   }
   .section .thumbnail a.active {
-    color: rgba(252, 0, 114, 0.8);
+    color: rgba(252, 0, 114, 0.5);
     opacity: 1;
   }
   .section .thumbnail a.active i {
