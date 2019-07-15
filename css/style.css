@@ -308,7 +308,6 @@ img {
 }
 .section .post {
   width: 90vw;
-  border-radius: 2rem;
   margin-bottom: 1rem;
 }
 .section .post .draw {
@@ -453,19 +452,24 @@ img {
   }
   .section .container-posts .post {
     width: 100%;
-    height: 300px;
-    max-height: 300px;
+    height: 340px;
+    max-height: 400px;
     cursor: pointer;
     transition: all 0.4s ease;
     align-self: start;
     margin-bottom: 0;
+    overflow: hidden;
+    display: grid;
+    align-content: center;
+    justify-content: center;
   }
   .section .container-posts .post:hover {
     transform: scale(1.1);
   }
   .section .container-posts .post img {
-    height: 100%;
     border-radius: 0;
+    min-width: 350px;
+    min-height: 340px;
     user-select: none;
   }
   .section .container-posts-one {
@@ -473,7 +477,7 @@ img {
     transition: all 1s ease-in-out;
   }
   .section .container-posts-one .post {
-    height: 500px;
+    min-height: 400px;
     max-height: 800px;
     filter: grayscale(0);
   }
