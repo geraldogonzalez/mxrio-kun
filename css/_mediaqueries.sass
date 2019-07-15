@@ -15,6 +15,17 @@
                     height: 50px
                     .fab
                         margin-top: .7rem
+    
+    .btn-top
+        width: 50px
+        height: 50px
+        padding: .5rem
+        border: 2px solid $blanco
+        border-radius: 50%
+        left: initial
+        right: 1.5rem
+        bottom: 1.5rem
+        margin: 0
 
 @media screen and (min-width: 800px)
     .header
@@ -87,6 +98,7 @@
                 opacity: .5
                 i 
                     cursor: pointer
+                    transition: all .7s ease
                 &:hover
                     opacity: .5
             a.active
@@ -108,22 +120,31 @@
             .post
                 width: 100%
                 height: 340px
-                max-height: 400px
+                max-height: 340px
                 cursor: pointer
                 transition: all .4s ease
-                align-self: start
+                display: grid
+                align-content: center
                 margin-bottom: 0
+                overflow: hidden
                 &:hover
                     transform: scale(1.1)
                 img 
                     min-height: 340px
                     border-radius: 0
                     user-select: none
+            .post:nth-child(9),
+            .post:nth-child(12),
+            .post:nth-child(19),
+            .post:nth-child(21),
+            .post:nth-child(23),
+            .post:nth-child(24)
+                align-content: start
         .container-posts-one
             grid-template-columns: repeat(auto-fit, minmax(300px, 55%))
             transition: all 1s ease-in-out
             .post
-                height: 500px
-                max-height: 800px
-                filter: grayscale(0)
+                overflow: unset 
+                height: 100%
+                max-height: 100%
             
