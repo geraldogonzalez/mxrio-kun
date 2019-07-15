@@ -29,10 +29,6 @@ body.lb-disable-scrolling {
   height: auto;
   max-width: inherit;
   max-height: none;
-  border-radius: 3px;
-
-  /* Image border */
-  border: 4px solid white;
 }
 
 .lightbox a img {
@@ -97,7 +93,6 @@ body.lb-disable-scrolling {
 .lb-prev, .lb-next {
   height: 100%;
   cursor: pointer;
-  display: block;
 }
 
 .lb-nav a.lb-prev {
@@ -115,7 +110,7 @@ body.lb-disable-scrolling {
 
 .lb-nav a.lb-prev:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-  opacity: 1;
+  opacity: .4;
 }
 
 .lb-nav a.lb-next {
@@ -133,7 +128,7 @@ body.lb-disable-scrolling {
 
 .lb-nav a.lb-next:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-  opacity: 1;
+  opacity: .4;
 }
 
 .lb-dataContainer {
